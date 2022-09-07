@@ -60,6 +60,7 @@ i {
 .products {
     width: calc((100% / 12)* 4);
     padding: 2rem 0.5rem;
+    position: relative;
 }
 
 .products img{
@@ -86,4 +87,22 @@ i {
 
 .total {
     text-decoration: line-through;
+}
+
+.badge {
+    position: absolute;
+    bottom: 25%;
+    font-family: 'Archivo', sans-serif;
+}
+
+.discount_box {
+    background-color: red;
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+.env_friendly {
+    background-color: green;
+    color: white;
+    padding: 0.25rem 0.5rem;
 }
