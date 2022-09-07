@@ -65,3 +65,25 @@ i {
 .products img{
     max-width: 100%; 
 }
+
+.brand {
+    color: grey;
+    font-family: 'Crimson Text', serif;
+}
+
+.pr_description {
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+}
+
+.price {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.discount {
+    color: orange;
+}
+
+.total {
+    text-decoration: line-through;
+}
