@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg_header: orange;
+    --basic-black: black;
+    --primary-white: white;
+    --hover-color: red;
+    --brand-color: grey;
+    --env-color: green;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -34,19 +43,19 @@ body {
 
 nav, .logo, .access {
     width: calc((100% / 12)*4);
-    color: white;
+    color: var(--primary-white);
     text-align: center;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-white);
     padding: 0.5rem;
     font-family: 'Fira Sans', sans-serif;
 }
 
 nav a:hover, i:hover {
-    color: red;
+    color: var(--hover-color);
     cursor: pointer;
     transition: 0.4s;
 }
@@ -65,6 +74,9 @@ i {
 }
 
 /* #endregion header style */
+
+/* #region main style */
+
 
 .products {
     width: calc((100% / 12)* 4);
@@ -90,7 +102,7 @@ i {
 }
 
 .brand {
-    color: grey;
+    color: var(--brand-color);
     font-family: 'Crimson Text', serif;
 }
 
@@ -104,7 +116,7 @@ i {
 }
 
 .discount {
-    color: orange;
+    color: var(--bg_header);
 }
 
 .total {
@@ -118,21 +130,21 @@ i {
 }
 
 .discount_box {
-    background-color: red;
-    color: white;
+    background-color: var(--hover-color);
+    color: var(--primary-white);
     padding: 0.25rem 0.5rem;
 }
 
 .env_friendly {
-    background-color: green;
-    color: white;
+    background-color: var(--env-color);
+    color: var(--primary-white);
     padding: 0.25rem 0.5rem;
 }
 
 .like {
     height: 50px;
     width: 50px;
-    background-color: white;
+    background-color: var(--primary-white);
     position: absolute;
     top: 7%;
     right: 2%;
@@ -147,7 +159,41 @@ i {
 }
 
 .heart_position:hover {
-    color: red;
+    color: var(--hover-color);
     transition: 0.4s;
     cursor: pointer;
 }
+
+/* #endregion main style */
+
+
+/* #region footer style */
+#site_footer {
+    background-color: var(--basic-black);
+}
+
+h4 {
+    color: var(--primary-white);
+    margin-bottom: 1rem;
+}
+
+.flex i {
+    color: var(--primary-white);
+}
+
+.flex a {
+    text-decoration: none;
+    color: var(--primary-white);
+    margin-right: 1rem;
+}
+
+.flex i:hover, .flex a:hover {
+    color: var(--hover-color);
+}
+
+.foot {
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* #endregion footer style */
