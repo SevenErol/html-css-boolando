@@ -57,3 +57,11 @@ i {
 
 /* #endregion header style */
 
+.products {
+    width: calc((100% / 12)* 4);
+    padding: 2rem 0.5rem;
+}
+
+.products img{
+    max-width: 100%; 
+}
